@@ -1,0 +1,35 @@
+.container {
+    position: absolute;
+    // background: olivedrab;
+    width: 100rem;
+    // height: 100%;
+    margin: 0 auto;
+    background-color: var(--dark1);
+    background-image: linear-gradient(to right, rgba(36, 36, 36, 0.11) ,rgba(0, 0, 0, 0.849)), url(../img/wood.jpg);
+    background-size: cover;
+    background-position: right;
+    min-height: 50rem;
+    box-shadow: var(--shadow2);
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    // border:1px solid blue;
+    
+    .content {
+        // border:1px solid blue;
+        display: flex;
+        justify-content: space-between;
+        
+        .menu-view {
+            // border:1px solid blue;
+            flex: 1 1 70%;
+        }
+        
+        .sidebar { 
+            flex: 0 1 30%;
+            background-color: var(--dark4);
+            // border:1px solid blue;
+            
+        }
+    }
+}

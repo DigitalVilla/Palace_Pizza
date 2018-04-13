@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- //Design by Omar Villanueva 2018-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+
+    <title>PALACE PIZZA</title>
+</head>
+
+<body>
+    <div id="pizza-app" class="container">
+        <header class="header">
+            <img class="logo" src="img/logoW.png" alt="logo">
+
+            <form action="#" class="search">
+
+                <input type="text" class="search_input" placeholder="Find  a Location Near You">
+                <svg class="search_icon">
+                    <use xlink:href="img/sprite.svg#icon-magnifying-glass"></use>
+                </svg>
+            </form>
+            <div class="nav-btn">
+                <div class="nav-btn_icon-box">
+                    <svg class='nav-btn_icon'>
+                        <use xlink:href='img/sprite.svg#icon-home'></use>
+                    </svg>
+                </div>
+                <div class="nav-btn_icon-box current">
+                    <svg class='nav-btn_icon'>
+                        <use xlink:href='img/sprite.svg#icon-pizza'></use>
+                    </svg>
+                </div>
+                <div class="nav-btn_icon-box">
+                    <svg class='nav-btn_icon'>
+                        <use xlink:href='img/sprite.svg#icon-office'></use>
+                    </svg>
+                </div>
+                <div class="nav-btn_icon-box">
+                    <svg class='nav-btn_icon'>
+                        <use xlink:href='img/sprite.svg#icon-chat'></use>
+                    </svg>
+                </div>
+            </div>
+        </header>
+
+        <div class="content">
+            <main class="menu-view">
+                <div class="menu-view_display">
+                    <img src="img/pplogoW.png" alt="">
+                </div>
+                <div class="menu-view_row-1">
+                    <div class="menu-view_pizza-btn">
+                        <img src="img/alfredo.png" alt="Alfredo">
+                        <div class="kindOf">
+                            <span>Cheese</span>
+                        </div>
+                    </div>
+                    <div class="menu-view_pizza-btn">
+                        <img src="img/hawaian.png" alt="hawaian"> &nbsp;
+                        <div class="kindOf">
+                            <span>Hawaian</span>
+                        </div>
+                    </div>
+                    <div class="menu-view_pizza-btn">
+                        <img src="img/pepperoni2.png" alt="pepperoni"> &nbsp;
+                        <div class="kindOf">
+                            <span>Pepperoni</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-view_row-2">
+                    <div class="menu-view_pizza-btn">
+                        <img src="img/bbq.png" alt="bbq"> &nbsp;
+                        <div class="kindOf">
+                            <span>BBQ</span>
+                        </div>
+                    </div>
+                    <div class="menu-view_pizza-btn">
+                        <img src="img/veggie.png" alt="veggie"> &nbsp;
+                        <div class="kindOf">
+                            <span>Veggie</span>
+                        </div>
+                    </div>
+                    <div class="menu-view_pizza-btn">
+                        <img src="img/spinach.png" alt="spinach"> &nbsp;
+                        <div class="kindOf">
+                            <span>Spinach</span>
+                        </div>
+                    </div>
+                </div>
+            </main>
+
+            <div class="sidebar">
+
+                <div class="side-nav_title">
+
+
+                    <svg class='side-nav_title_icon'>
+                        <use xlink:href='img/sprite.svg#icon-map'></use>
+                    </svg>
+                    <span>Your Order</span>
+                </div>
+                <form action="" class="side-nav_prices">
+
+                    <div class="side-nav_prices-radio">
+
+                        <input id="small" type="radio" name="size" required="true" value="small" />
+                        <label for="small">
+                            <span class="side-nav_prices-radio-btn"></span> Small</label>
+
+                        <input id="medium" type="radio" name="size" required="true" value="medium" />
+                        <label for="medium">
+                            <span class="side-nav_prices-radio-btn"></span> Medium</label>
+
+                        <input id="large" type="radio" name="size" required="true" value="large" checked="checked" />
+                        <label for="large">
+                            <span class="side-nav_prices-radio-btn"></span>Large</label>
+                    </div>
+
+                </form>
+
+                <div class="side-nav_title">
+                    <svg class='side-nav_title_icon'>
+                        <use xlink:href='img/sprite.svg#icon-text'></use>
+                    </svg>
+                    <span>Add Item</span>
+                </div>
+
+                <div id="ordersPS" class="side-nav_order">
+                    <ul class="side-nav_order_list">
+                    </ul>
+                </div>
+                <h2 class="side-nav_total">Total:
+                    <span class="total-price">$99.00</span>
+                </h2>
+                <div class="checkout-btn">
+                    <a class="checkout-btn_link" href="#popup">
+                        <svg class='checkout-btn_icon'>
+                            <use xlink:href='img/sprite.svg#icon-dollar'></use>
+                        </svg>
+                        <span class="checkout-btn_text">Check Out</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="popup">
+        <div class="checkout">
+            <div class="checkout-head">
+                <img src="img/logoW.png" alt="logo">
+                <h2>Palace Pizza</h2>
+
+            </div>
+            <h6 id="date"></h6>
+            <form method="get" action="mailto:registration@sait.net">
+                <input type="text" class="text" placeholder="Full Name" pattern="[A-Za-z]{1,}" title="No digits" required="true">
+
+                <input type="text" class="text" required="true" placeholder="Phone Number" pattern="\d{3}[\-]\d{3}[\-]\d{4}" title="000-000-0000">
+                <input type="text" class="text" placeholder="Address" pattern="[A-Za-z]{1,}" title="No digits" required="true">
+                <input type="text" class="text" required="true" placeholder="Credit Card" pattern="\d{3}[\-]\d{3}[\-]\d{4}" title="000-000-0000">
+
+                <input type="date" class="text" required="true" placeholder="Expiry Date">
+
+                <input type="text" class="text" required="true" placeholder="CPV" pattern="\d{3}[\-]\d{3}[\-]\d{4}" title="000-000-0000">
+
+                <input type="email" class="text" placeholder="your@email.com " required="true">
+
+                <button class="checkout-btn">
+                    Check Out
+                    <!-- <img src="img/pizza.png" alt=""> -->
+                </button>
+                <a href="#pizza-app" class="clear-btn">
+                    Cancel
+                </a>
+
+            </form>
+        </div>
+
+        <div class="background">
+            &nbsp;
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+   
+
+</body>
+
+</html>

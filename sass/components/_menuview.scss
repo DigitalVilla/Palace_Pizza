@@ -1,0 +1,101 @@
+.menu-view {
+    display: flex; // flex:1;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: space-between;
+    justify-content: center; // background-color: mediumslateblue;
+    height: 80vh;
+    padding: 2rem;
+    &_display {
+        background-image:  url(../img/pizzamain.jpg);
+        background-size: cover;
+        background-position: left;
+        height: 50%;
+        width: 100%;
+        box-shadow: var(--shadow2);
+        & img {
+            position: relative;
+            top: 30%;
+            left: 3rem;
+            opacity: .9; // width: 30rem;
+        }
+    }
+    [class*="row-"] {
+        display: flex;
+    }
+    &_pizza-btn {
+        text-align: center;
+        position: relative;
+        &:not(:last-of-type) {
+            margin-right: 4rem;
+        }
+        & img {
+            // border: 1px solid blue;
+            cursor: pointer;
+            height: 9rem;
+            &:hover {
+                transform: translateY(-.6rem) scale(1.05);
+                &+.kindOf::before {
+                    opacity: 1;
+                    transform: scale(1);
+                    background-image: var(--light2); // color: var(--colorMain);
+                    transition: transform .2s;
+                    visibility: visible;
+                }
+                & +.kindOf span {
+                    visibility: visible;
+                }
+            }
+            &:active {
+                transform: translateY(-.2rem) scale(1);
+                &+.kindOf::before { 
+                    transform: scale(.95);
+                    transform-origin: center;
+                }
+                & +.kindOf span {
+                    opacity: .3;
+                    transition: all .2s;
+                }
+            }
+        }
+        .kindOf {
+            position: absolute;
+            top: 60%;
+            left: 0;
+            // transform: translateX(-50%);
+            padding: 0 2rem;
+            // border: 1px solid blue;
+            color: var(--light2);
+            font-size: 2rem; 
+            visibility: hidden;
+            &::before {
+                content: "";
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                margin-left: -2rem;
+                background-color: var(--colorMain);
+                border-bottom-right-radius: 2rem;
+                border-top-left-radius: 2rem;
+                transform: scale(0);
+                transform-origin: left;
+                transition: transform .2s, width .2s cubic-bezier(1, 0, 0, 1) .1s, background-color .1s, opacity .2s;
+                opacity: .4;
+            }
+            &:hover::before {
+                z-index: 0;
+                opacity: 1;
+                transform: scale(1);
+                background-image: var(--light2); // color: var(--colorMain);
+                transition: transform .2s;
+            }
+            & span {
+                font-size: 2rem;
+                position: relative;
+                z-index: 100;
+            }
+        }
+    }
+}
+
+.menu-view {}

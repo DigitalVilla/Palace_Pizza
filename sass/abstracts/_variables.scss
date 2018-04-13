@@ -1,0 +1,48 @@
+/*
+COLORS
+*/
+
+:root {
+    --colorMain: #eb2f42;
+    --colorLight: #ff394d;
+    --colorDark: #d1091d;
+
+    --colorLightA: rgba(143, 33, 44, 0.948);
+    --colorDarkA: rgba(139, 38, 49, 0.87);
+
+    --colorLightB: rgba(143, 33, 44, 0.568);
+    --colorDarkB: rgba(139, 38, 50, 0.459);
+
+
+    --color0: rgba(255, 79, 123, 0.541);
+    --light1: #faf9f9;
+    --light2: #f4f2f2;
+    --light3: #f0eeee;
+    --light4: #ccc;
+    --dark1: rgb(41, 41, 41);
+    --dark2: #777;
+    --dark3: #999;
+    --dark4: rgb(65, 65, 65);
+    /*Shadows*/
+    --shadow1: 0 1rem 2rem rgba(0, 0, 0, .3);
+    --shadow2: 0 2rem 4rem rgba(0, 0, 0, .4);
+    --shadow3: 0 3rem 6rem rgba(0, 0, 0, .5);
+
+}
+
+
+    //Grid 
+    
+    $grid-width:100%;
+    $gap-V:2rem;
+    $gap-H:3rem;
+
+//Media Break Points
+$BP1:850px;
+$BP2:660px;
+$BP3:590px;
+
+$BP1x: 1200px;
+
+$BP4:440px;
+$BP6s: 670px;
