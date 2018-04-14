@@ -1,6 +1,6 @@
-# A Pizza Order Application Mock-up
-### Pure HTML & CSS Mock-Up Design
-Proud of not using bootstrap or Jquery!
-The mock up is not fully implemented.
+# Palace Pizza
+### An experimental SASS mock-up of a pizza ordering system
+#### Technologies
+SASS, HTML, SVG, CSS-Animations and No Bootstrap!
 #### Main Screen
 ![Screenshot](screenshot.png) 
